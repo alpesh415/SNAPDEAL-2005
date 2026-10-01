@@ -1,0 +1,355 @@
+
+
+.sd-header {
+  width: 100%;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.sd-topbar {
+  background: #ffe9ed;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.sd-top-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.sd-offer {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.sd-divider {
+  height: 20px;
+  border-left: 1px dotted #777;
+}
+
+
+
+.sd-top-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.sd-top-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #333;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sd-top-item i {
+  font-size: 18px;
+  color: #444;
+}
+
+
+
+.sd-main-header {
+  background: #fff;
+  padding: 12px 0;
+}
+
+
+
+.sd-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sd-logo-text {
+  font-size: 27px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: -1.5px;
+}
+
+
+
+.sd-logo-shape {
+  width: 28px;
+  height: 28px;
+  background: #f7264f;
+  position: relative;
+  margin-right: 5px;
+
+  clip-path: polygon(
+    0 25%,
+    50% 0,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0 75%
+  );
+}
+
+.sd-logo-shape::after {
+  content: "";
+
+  position: absolute;
+
+  width: 13px;
+  height: 13px;
+
+  background: white;
+
+  top: 7px;
+  left: 7px;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    65% 50%,
+    100% 100%,
+    0 100%,
+    35% 50%
+  );
+}
+
+
+
+.sd-search {
+  width: 100%;
+  height: 48px;
+
+  border: 1px solid #bbb;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 13px;
+
+  background: #f8f9f9;
+}
+
+.sd-search i {
+  font-size: 19px;
+  color: #333;
+}
+
+.sd-search input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  padding-left: 7px;
+
+  font-size: 14px;
+  color: #333;
+}
+
+.sd-search input::placeholder {
+  color: #666;
+}
+
+
+
+.sd-action {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2px;
+
+  color: #666;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  min-height: 48px;
+}
+
+.sd-action i {
+  font-size: 22px;
+  color: #666;
+}
+
+.sd-action:hover {
+  color: #f7264f;
+}
+
+.sd-action:hover i {
+  color: #f7264f;
+}
+
+
+
+.sd-download-btn {
+  width: 100%;
+  min-height: 48px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #f7264f;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  cursor: pointer;
+}
+
+.sd-download-btn i {
+  font-size: 18px;
+}
+
+.sd-download-btn:hover {
+  background: #e91d45;
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .sd-offer {
+    font-size: 12px;
+  }
+
+  .sd-top-right {
+    gap: 15px;
+  }
+
+  .sd-top-item {
+    font-size: 12px;
+  }
+
+  .sd-top-item i {
+    font-size: 17px;
+  }
+
+  .sd-logo-text {
+    font-size: 25px;
+  }
+
+  .sd-search {
+    height: 45px;
+  }
+
+  .sd-search input {
+    font-size: 13px;
+  }
+
+  .sd-download-btn {
+    font-size: 13px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+
+  .sd-topbar {
+    min-height: 35px;
+  }
+
+  .sd-top-left {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .sd-offer {
+    font-size: 10px;
+  }
+
+  .sd-divider {
+    height: 15px;
+  }
+
+  .sd-top-right {
+    display: none;
+  }
+
+  .sd-main-header {
+    padding: 9px 0;
+  }
+
+  .sd-logo-text {
+    font-size: 22px;
+  }
+
+  .sd-logo-shape {
+    width: 24px;
+    height: 24px;
+  }
+
+  .sd-logo-shape::after {
+    width: 11px;
+    height: 11px;
+    top: 6px;
+    left: 6px;
+  }
+
+  .sd-search {
+    height: 42px;
+    margin-top: 8px;
+  }
+
+  .sd-search i {
+    font-size: 17px;
+  }
+
+  .sd-search input {
+    font-size: 12px;
+  }
+
+  .sd-action {
+    min-height: 42px;
+    font-size: 11px;
+  }
+
+  .sd-action i {
+    font-size: 20px;
+  }
+
+  .sd-download-btn {
+    min-height: 42px;
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .sd-download-btn i {
+    font-size: 14px;
+  }
+}
+/* Wishlist + Admin symbols */
+.sd-header-symbols{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-left:1px solid #eee;padding-left:8px}
+.sd-symbol-action{width:64px;height:48px;border:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#555;cursor:pointer;border-radius:7px}
+.sd-symbol-action i{font-size:21px;line-height:1}
+.sd-symbol-action span{font-size:10px;font-weight:700}
+.sd-symbol-action:hover{color:#f7264f;background:#fff6f7}
+.sd-header-symbols .sd-symbol-action + .sd-symbol-action{border-left:1px solid #eee;border-radius:0;padding-left:10px}
+@media(max-width:767px){.sd-header-symbols{gap:2px;padding-left:2px}.sd-symbol-action{width:48px;height:42px}.sd-symbol-action i{font-size:19px}.sd-symbol-action span{font-size:9px}}

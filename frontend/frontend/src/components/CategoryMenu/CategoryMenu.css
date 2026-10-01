@@ -1,0 +1,158 @@
+.category-menu {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 3px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.category-title {
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 18px;
+
+  background: #f7f7f7;
+
+  border-bottom: 1px solid #eeeeee;
+
+  color: #333333;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.category-title i {
+  font-size: 19px;
+}
+
+
+
+
+.category-list {
+  padding: 5px 0;
+}
+
+
+
+
+.category-item {
+  min-height: 44px;
+
+  padding: 0 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color: #555555;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.category-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+.category-left i {
+  width: 20px;
+
+  font-size: 17px;
+
+  color: #777777;
+
+  text-align: center;
+}
+
+.category-item span {
+  font-size: 13px;
+}
+
+.category-arrow {
+  font-size: 12px;
+
+  color: #999999;
+}
+
+
+
+
+.category-item:hover {
+  background: #fff2f5;
+
+  color: #f7264f;
+
+  padding-left: 23px;
+}
+
+.category-item:hover .category-left i,
+.category-item:hover .category-arrow {
+  color: #f7264f;
+}
+
+
+
+
+.view-all-category {
+  min-height: 48px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #f7264f;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.view-all-category:hover {
+  background: #fff5f7;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .category-item {
+    min-height: 40px;
+
+    padding: 0 12px;
+  }
+
+  .category-title {
+    padding: 0 12px;
+  }
+
+  .category-item span {
+    font-size: 12px;
+  }
+
+}
